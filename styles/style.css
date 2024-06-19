@@ -8,22 +8,55 @@
 
 /* colors */
 html {
-    --background: #FFFFFF;
-    --black: #333333;
+    --white: #FFFFFF;
+    --gray-one: #333333;
+    --gray-two: #F9F9F9;
+    --gray-three: #F2F2F2;
+    --gray-four: #BDBDBD;
+    --gray-five: #E0E0E0;
 
     /* 1rem = 16px (User Agent) = 100% */
     font-size: 62.5%;
 }
 
 body {
-    background: var(--background);
+    background: var(--white);
+    padding: 0 13rem;
     /* clamp = intervalo de tamanho (mínimo, padrão e máximo */
     font-size: clamp(14px, 1.6rem, 2vw);
     font-family: 'Roboto', sans-serif;
 }
 
+/* buttons */
+button {
+    border: solid 1px var(--gray-three);
+    background-color: var(--white);
+    padding: 1.5rem;
+    margin-top: 9rem;
+    margin-right: 2.2rem;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+    width: 300px;
+    padding: 3rem 2rem;
+    background-color: var(--white);
+    text-transform: uppercase;
+    color: var(--gray-one);
+    letter-spacing: .5rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: var(--gray-two);
+}
+
+/* header */
 header {
-    padding: 2.9rem 13rem;
+    padding: 2.9rem 0rem;
 
     display: flex;
     align-items: center;
@@ -42,13 +75,54 @@ nav ul {
 
 nav ul a {
     font-size: 1.2rem;
-    color: var(--black);
+    color: var(--gray-one);
     text-transform: uppercase;
     letter-spacing: .3rem;
     padding: .4rem 1.5rem;
 }
 
 nav ul a:hover {
-    border-top: solid .1rem var(--black);
-    border-bottom: solid .1rem var(--black);
+    border-top: solid .1rem var(--gray-one);
+    border-bottom: solid .1rem var(--gray-one);
 }
+
+/* project with flexbox */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project .ld-page.one {
+    flex-basis: 40%;
+}
+
+.project .ld-page.one p:first-child{
+    color: var(--gray-four);
+    font-size: 6.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.project .ld-page.one p:nth-child(2){
+    color: var(--gray-one);
+    font-size: 6.4rem;
+    font-weight: 700;
+}
+
+.project .ld-page.one p:last-child{
+    color: var(--gray-four);
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-top: 4.6rem;
+    letter-spacing: .8rem;
+}
+
+.project .ld-page.two {
+    flex-basis: 60%;
+}
+
+.project .ld-page.two .img-building {
+    width: 100%;
+}
+
