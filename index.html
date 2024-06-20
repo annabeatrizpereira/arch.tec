@@ -11,70 +11,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div id="logo">
-                <img src="./images/logo.svg" alt="logo from arch.tec">
+    <header>
+        <div id="logo">
+            <img src="./images/logo.svg" alt="logo from arch.tec">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Main</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="project">
+            <div class="ld-page one">
+                <h1>PROJECT</h1>
+                <p>Lorum</p>
+
+                <button>
+                    <img src="./images/left-arrow.svg" alt="arrow to the left">
+                </button>
+
+                <button>
+                    <img src="./images/right-arrow.svg" alt="arrow to the right">
+                </button>
+
+                <p>01 / 02 </p>
             </div>
 
-            <nav>
-                <ul>
-                    <li><a href="#">Main</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Certifications</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
-            </nav>
-        </header>
+            <div class="ld-page two">
+                <img src="./images/landing-page.png" alt="image of a building" class="img-building">
 
-        <main>
-            <div class="project">
-                <div class="ld-page one">
-                    <p>Project</p>
-                    <p>Lorum</p>
-
-                    <button>
-                        <img src="./images/left-arrow.svg" alt="arrow to the left">
-                    </button>
-
-                    <button>
-                        <img src="./images/right-arrow.svg" alt="arrow to the right">
-                    </button>
-
-                    <p>01 / 02 </p>
-                </div>
-
-                <div class="ld-page two">
-                    <img src="./images/landing-page.png" alt="image of a building" class="img-building">
-                    
-                    <div class="button">
-                        <p>View Project</p>
-                        <img src="./images/right-arrow.svg" alt="arrow to the right">
-                    </div>
+                <div class="button">
+                    <p>View Project</p>
+                    <img src="./images/right-arrow.svg" alt="arrow to the right">
                 </div>
             </div>
+        </div>
 
-            <div class="about">
-
+        <div class="about">
+            <div class="images">
+                <img id="image-1" src="./images/about-1.png" alt="image of a building">
+                <img id="image-2" src="./images/about-2.png" alt="image of a building">
+                <img id="image-3" src="./images/about-3.png" alt="image of a building">
             </div>
-
-            <div class="main-focus">
-
+            <div class="about-content">
+                <h1>About</h1>
+                <p class="light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="button">
+                <p>Read More</p>
+                <img src="./images/right-arrow.svg" alt="arrow to the right">
             </div>
-
-            <div class="our-projects">
-
             </div>
+        </div>
 
-            <div class="contact-us">
+        <div class="main-focus">
 
-            </div>
-        </main>
+        </div>
 
-        <footer>
+        <div class="our-projects">
 
-        </footer>
-    </div>
+        </div>
+
+        <div class="contact-us">
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
