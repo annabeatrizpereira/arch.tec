@@ -15,6 +15,7 @@ html {
     --gray-three: #F2F2F2;
     --gray-four: #BDBDBD;
     --gray-five: #E0E0E0;
+    --gray-six: #F3F3F3;
 
     /* 1rem = 16px (User Agent) = 100% */
     font-size: 62.5%;
@@ -22,17 +23,30 @@ html {
 
 body {
     background: var(--white);
-    padding: 0 13rem;
 
     /* clamp = intervalo de tamanho (mínimo, padrão e máximo) */
     font-size: clamp(14px, 1.6rem, 2vw);
     font-family: 'Roboto', sans-serif;
 }
 
+.sr-only{ 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 main {
     display: flex;
     flex-direction: column;
     gap: 12rem;
+    
+    padding: 0 13rem;
 }
 
 /* titles */
@@ -40,6 +54,12 @@ h1 {
     color: var(--gray-four);
     font-size: 6.4rem;
     font-weight: 300;
+}
+
+h2 {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
 .light {
@@ -55,7 +75,8 @@ h1 {
 }
 
 /* buttons */
-button {
+.buttons {
+    display: inline-block;
     border: solid 1px var(--gray-three);
     background-color: var(--white);
     padding: 1.5rem;
@@ -63,7 +84,7 @@ button {
     margin-right: 2.2rem;
 }
 
-button:hover {
+.buttons:hover {
     background-color: var(--gray-two);
 }
 
@@ -72,17 +93,22 @@ button:hover {
     align-items: center;
     justify-content: flex-start;
     gap: 1.8rem;
+
     padding: 2.4rem 2rem;
     width: 22.2rem;
+    border: none;
+
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-size: 1.2rem;
-    
+}
+
+.button.white {
     background-color: var(--white);
     color: var(--gray-one);
 }
 
-.button:hover {
+.button.white:hover {
     background-color: var(--gray-two);
 }
 
@@ -173,7 +199,7 @@ nav ul a:hover {
     width: 100%;
 }
 
-.project .ld-page.two .button {
+.project .ld-page.two .button.white {
     position: absolute;
     bottom: 4px;
 }
@@ -258,11 +284,107 @@ nav ul a:hover {
 }
 
 .our-projects .images img {
-    height: 255px;
-    width: 30%;
+    height: 235px;
 }
 
 .our-projects .button.black {
     align-self: flex-end;
 }
+
+/* contact-us */
+.contact-us form {
+    margin: 3rem 0rem;
+}
+
+.contact-us form section {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact-us form section .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 40%;
+}
+
+.contact-us form section input,
+.contact-us form section textarea {
+    background-color: var(--gray-six);
+    border: none;
+    padding: 1.5rem 2rem;
+    outline: none;
+}
+
+.contact-us form section textarea {
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.contact-us form section img {
+    width: 60%;
+}
+
+/* footer */
+footer {
+    background-color: var(--gray-one);
+    color: var(--white);
+    margin-top: 9rem;
+}
+
+footer section {
+    padding: 5.7rem 13rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer section ul {
+    list-style: none;
+}
+
+footer section ul li {
+    margin-top: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer section ul:last-child div {
+    display: flex;
+    gap: 4rem;
+}
+
+footer section ul a {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+footer section ul a:hover {
+    color: var(--gray-four);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+footer #line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--gray-four);
+    opacity: 50%;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--gray-four);
+    padding: 2.4rem 0;
+    opacity: 50%;
+}
+
 
