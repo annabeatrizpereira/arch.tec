@@ -1,0 +1,24 @@
+.gallery {
+    margin-top: 15rem;
+}
+
+#line {
+    margin: 3rem 0;
+}
+
+.gallery .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.gallery .photos img {
+    height: 239.5px;
+}
+
+.gallery .count {
+    display: inline-block;
+    margin-right: 3rem;
+}
