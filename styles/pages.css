@@ -1,0 +1,39 @@
+main {
+    margin-top: 15rem;
+}
+
+#line {
+    margin: 3rem 0;
+}
+
+/* gallery */
+.gallery .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.gallery .photos img {
+    height: 239.5px;
+}
+
+.count {
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+/* projects */
+.projects .sample-projects {
+    background-color: var(--gray-six);
+    margin-bottom: 3rem;
+    display: flex;
+}
+
+.projects .sample-projects .text-container {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
